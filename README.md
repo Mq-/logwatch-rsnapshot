@@ -4,8 +4,7 @@ Logwatch configuration for Rsnapshot logfiles
 What does it do?
 -
 
-This is a logwatch filter for Rsnapshot logfiles. It just collects, if there were errors
-in the rsnapshot logfile. 
+This is a logwatch filter for Rsnapshot logfiles. It just collects, if there were errors in the rsnapshot logfile. 
 
 Example output
 -
@@ -28,7 +27,7 @@ Installation
 
 1. Copy files from 'conf/logfiles/' to '/etc/logwatch/conf/logfiles'
 2. Copy files 'conf/services/' to '/etc/logwatch/conf/services'
-3. Copy files 'scripts/services/' to '/etc/logwatch/scripts/services'
+3. Copy files 'scripts/services/' to '/usr/share/logwatch/scripts/services'
 
 Usage
 -
