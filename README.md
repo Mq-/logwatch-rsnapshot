@@ -38,8 +38,8 @@ It reports successfull executions of rsnapshot and any error that appears in the
 Execute `create_symlinks.sh` or create symlinks yourself:
 
 1. Files from `conf/logfiles/` to `/etc/logwatch/conf/logfiles`
-2. Files `conf/services/` to `/etc/logwatch/conf/services`
-3. Files `scripts/services/` to `/etc/logwatch/scripts/services`
+2. Files from `conf/services/` to `/etc/logwatch/conf/services`
+3. Files from `scripts/services/` to `/etc/logwatch/scripts/services`
 
 
 ## Usage
