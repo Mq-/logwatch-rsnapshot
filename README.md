@@ -5,8 +5,7 @@
 
 
 This is a logwatch filter for Rsnapshot logfiles.
-It collects, if there were errors in the rsnapshot logfile.
-It reports successfull runs of rsnapshot
+It reports successfull executions of rsnapshot and any error that appears in the logfiles.
 
 ## Example output
 
@@ -23,7 +22,7 @@ It reports successfull runs of rsnapshot
 ```
 --------------------- RSNAPSHOT Begin ------------------------
 
-4 RSnapshot error(s):
+4 rsnapshot error(s):
 
 [04/May/2015:08:07:48] /usr/bin/rsnapshot daily: ERROR: /usr/bin/rsync returned 255 while processing user@192.168.2.1:/my/dir1
 [04/May/2015:08:07:48] /usr/bin/rsnapshot daily: ERROR: /usr/bin/rsync returned 255 while processing user@192.168.2.1:/my/dir2
@@ -36,10 +35,11 @@ It reports successfull runs of rsnapshot
 
 ## Installation
 
+Execute `create_symlinks.sh` or create symlinks yourself:
 
-1. Copy files from `conf/logfiles/` to `/etc/logwatch/conf/logfiles`
-2. Copy files `conf/services/` to `/etc/logwatch/conf/services`
-3. Copy files `scripts/services/` to `/usr/share/logwatch/scripts/services`
+1. Files from `conf/logfiles/` to `/etc/logwatch/conf/logfiles`
+2. Files `conf/services/` to `/etc/logwatch/conf/services`
+3. Files `scripts/services/` to `/etc/logwatch/scripts/services`
 
 
 ## Usage
